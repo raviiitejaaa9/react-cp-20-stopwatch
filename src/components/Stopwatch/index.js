@@ -29,10 +29,11 @@ class Stopwatch extends Component {
     const {isStarted} = this.state
     if (isStarted === false) {
       this.intervalId = setInterval(this.incrementTimeElapsedInSeconds, 1000)
-    }
+    
     this.setState(prevState => ({
       isStarted: !prevState.isStarted,
     }))
+    }
   }
 
   onStop = () => {
@@ -40,8 +41,9 @@ class Stopwatch extends Component {
     const {isStarted} = this.state
     if (isStarted) {
       this.clearTimeInterval()
+      this.setState(prevState => ({isStarted: !prevState.isStarted}))
     }
-    this.setState(prevState => ({isStarted: !prevState.isStarted}))
+    
   }
 
   onReset = () => {
