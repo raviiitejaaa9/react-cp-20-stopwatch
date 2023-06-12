@@ -1,0 +1,92 @@
+/* Write CSS here */
+
+body {
+  border: 0px;
+}
+
+* {
+  font-family: 'Roboto';
+}
+
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-container {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  width: 260px;
+  height: 240ox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.timer-img {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.card-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.start-btn {
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 26px;
+  background-color: #1db05f;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.stop-btn {
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 26px;
+  background-color: #ef0d36;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.reset-btn {
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 26px;
+  background-color: #eaa800;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  color: #ffffff;
+}
